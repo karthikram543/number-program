@@ -1,0 +1,27 @@
+public class number {
+
+	public static void main(String[] args) {
+	number obj =  new number();
+//	obj.fibonacci();
+    obj.palindrome();
+		
+	}
+  private void palindrome() {
+		int num=545;
+		int temp=num; // keep it focus here
+		int rem=0;
+		int sum=0;
+		while(num!=0) {
+			rem=num%10;
+			sum=(sum*10)+rem; // keep it focus here
+			num=num/10;
+			
+		}
+		if(num == sum) {
+			System.out.println("palindrome");
+		}
+		else {
+			System.out.println("not an palindrome");
+		}
+		
+	}
